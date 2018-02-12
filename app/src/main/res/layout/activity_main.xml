@@ -1,0 +1,52 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/lblWelcomeScreen"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_below="@+id/lblWelcomeScreen"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:hint="Password"
+        android:layout_below="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:tag="1"
+            android:text="Log in"
+            android:onClick="start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:tag="2"
+            android:text="sign up"
+            android:onClick="start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
